@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:ie-battplast.com)",
+      "Bash(convert logo.png -resize 64x64 -gravity center -background transparent -extent 64x64 favicon.png)",
+      "Bash(convert favicon.png -define icon:auto-resize=64,48,32,16 favicon.ico)"
+    ]
+  }
+}

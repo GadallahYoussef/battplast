@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IE-BattPlast | Italian-Egyptian Plastic Industries</title>
+    <meta name="description" content="Leading Italian-Egyptian company specializing in manufacturing car and motorcycle battery boxes and covers. Authorized DAKUMAR agents.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="64x64" href="https://ie-battplast.com/public/home//logo.png">
+    <link rel="apple-touch-icon" href="https://ie-battplast.com/public/home//logo.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <nav class="navbar" id="navbar">
+        <div class="container navbar__inner">
+            <a href="#home" class="navbar__logo">
+                <img src="https://ie-battplast.com/public/home/logo.png" alt="IE-BattPlast" class="navbar__logo-img">
+            </a>
+
+            <ul class="navbar__menu" id="navMenu">
+                <li><a href="#home" class="navbar__link active" data-i18n="nav_home">الرئيسية</a></li>
+                <li><a href="#products" class="navbar__link" data-i18n="nav_products">المنتجات</a></li>
+                <li><a href="#about" class="navbar__link" data-i18n="nav_about">عن الشركة</a></li>
+                <li><a href="#why-us" class="navbar__link" data-i18n="nav_why">لماذا نحن</a></li>
+                <li><a href="#vision" class="navbar__link" data-i18n="nav_vision">رؤيتنا</a></li>
+                <li><a href="#contact" class="navbar__link" data-i18n="nav_contact">تواصل معنا</a></li>
+            </ul>
+
+            <div class="navbar__actions">
+                <div class="lang-switcher" id="langSwitcher">
+                    <button class="lang-switcher__btn" id="langBtn" aria-label="Change language">
+                        <svg class="lang-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10A15.3 15.3 0 0112 2z"/></svg>
+                        <span id="currentLang">العربية</span>
+                        <svg class="chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="lang-switcher__dropdown" id="langDropdown">
+                        <button class="lang-option active" data-lang="ar">
+                            <span class="lang-flag">🇪🇬</span> العربية
+                        </button>
+                        <button class="lang-option" data-lang="en">
+                            <span class="lang-flag">🇬🇧</span> English
+                        </button>
+                        <button class="lang-option" data-lang="fr">
+                            <span class="lang-flag">🇫🇷</span> Français
+                        </button>
+                    </div>
+                </div>
+                <button class="navbar__hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO ==================== -->
+    <section class="hero" id="home">
+        <div class="hero__bg">
+            <div class="hero__particles" id="particles"></div>
+            <div class="hero__gradient"></div>
+        </div>
+        <div class="container hero__content">
+            <div class="hero__text">
+                <div class="hero__badge reveal" data-delay="0">
+                    <span class="badge-dot"></span>
+                    <span data-i18n="hero_badge">شريكك الموثوق في صناعة البلاستيك</span>
+                </div>
+                <h1 class="hero__title reveal" data-delay="100">
+                    <span data-i18n="hero_title_1">الشركة الإيطالية المصرية</span><br>
+                    <span class="gradient-text" data-i18n="hero_title_2">للصناعات البلاستيكية</span>
+                </h1>
+                <p class="hero__desc reveal" data-delay="200" data-i18n="hero_desc">
+                    شركة رائدة متخصصة في تصنيع علب وأغطية بطاريات السيارات والدراجات النارية بجميع الأنواع والموديلات، بأعلى معايير الجودة العالمية.
+                </p>
+                <div class="hero__buttons reveal" data-delay="300">
+                    <a href="#products" class="btn btn--primary">
+                        <span data-i18n="hero_btn_products">استكشف منتجاتنا</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                    <a href="#contact" class="btn btn--outline">
+                        <span data-i18n="hero_btn_contact">تواصل معنا</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero__visual reveal" data-delay="200">
+                <div class="hero__carousel" id="heroCarousel">
+                    <div class="hero__slides">
+                        <div class="hero__slide active">
+                            <img src="https://ie-battplast.com/public/home/img/first.png" alt="Battery box with cover and accessories">
+                        </div>
+                        <div class="hero__slide">
+                            <img src="https://ie-battplast.com/public/home/img/second.png" alt="Battery inner containers">
+                        </div>
+                        <div class="hero__slide">
+                            <img src="https://ie-battplast.com/public/home/img/Third.png" alt="Battery box components">
+                        </div>
+                        <div class="hero__slide">
+                            <img src="https://ie-battplast.com/public/home/img/Forth.png" alt="DAKUMAR injection machine">
+                        </div>
+                    </div>
+                    <div class="hero__carousel-dots">
+                        <button class="carousel-dot active" data-slide="0"></button>
+                        <button class="carousel-dot" data-slide="1"></button>
+                        <button class="carousel-dot" data-slide="2"></button>
+                        <button class="carousel-dot" data-slide="3"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero__scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== STATS BAR ==================== -->
+    <section class="stats-bar">
+        <div class="container stats-bar__inner">
+            <div class="stat-item reveal">
+                <div class="stat-item__number" data-count="2016">0</div>
+                <div class="stat-item__label" data-i18n="stat_founded">سنة التأسيس</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item reveal" data-delay="100">
+                <div class="stat-item__number"><span data-count="21">0</span>+</div>
+                <div class="stat-item__label" data-i18n="stat_experience">سنوات الخبرة</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item reveal" data-delay="200">
+                <div class="stat-item__number"><span data-count="6">0</span></div>
+                <div class="stat-item__label" data-i18n="stat_categories">فئات منتجات</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item reveal" data-delay="300">
+                <div class="stat-item__number"><span data-count="100">0</span>%</div>
+                <div class="stat-item__label" data-i18n="stat_quality">معايير الجودة</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PRODUCTS ==================== -->
+    <section class="section products" id="products">
+        <div class="container">
+            <div class="section__header reveal">
+                <span class="section__tag" data-i18n="products_tag">ما نصنعه</span>
+                <h2 class="section__title" data-i18n="products_title">منتجاتنا</h2>
+                <p class="section__desc" data-i18n="products_desc">نقدم مجموعة شاملة من علب وأغطية البطاريات بمختلف الأنواع والمواصفات العالمية</p>
+            </div>
+            <div class="products__grid">
+                <div class="product-card reveal" data-delay="0">
+                    <div class="product-card__icon-wrap">
+                        <div class="product-card__icon">
+                            <svg viewBox="0 0 64 64" fill="none"><rect x="12" y="20" width="40" height="28" rx="4" stroke="currentColor" stroke-width="2.5"/><rect x="22" y="14" width="20" height="6" rx="2" stroke="currentColor" stroke-width="2"/><path d="M20 30h8M36 30h8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><text x="22" y="43" font-size="8" fill="currentColor" font-weight="bold">JIS</text></svg>
+                        </div>
+                    </div>
+                    <h3 class="product-card__title" data-i18n="product_jis">أنواع JIS</h3>
+                    <p class="product-card__desc" data-i18n="product_jis_desc">علب وأغطية بطاريات بالمعايير الصناعية اليابانية لسيارات الركاب</p>
+                    <div class="product-card__footer">
+                        <span class="product-card__link" data-i18n="product_details">عرض التفاصيل</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </div>
+                </div>
+
+                <div class="product-card reveal" data-delay="100">
+                    <div class="product-card__icon-wrap">
+                        <div class="product-card__icon">
+                            <svg viewBox="0 0 64 64" fill="none"><rect x="12" y="20" width="40" height="28" rx="4" stroke="currentColor" stroke-width="2.5"/><rect x="22" y="14" width="20" height="6" rx="2" stroke="currentColor" stroke-width="2"/><path d="M20 30h8M36 30h8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><text x="21" y="43" font-size="8" fill="currentColor" font-weight="bold">DIN</text></svg>
+                        </div>
+                    </div>
+                    <h3 class="product-card__title" data-i18n="product_din">أنواع DIN</h3>
+                    <p class="product-card__desc" data-i18n="product_din_desc">علب وأغطية بطاريات بالمعايير الصناعية الألمانية للسيارات الأوروبية</p>
+                    <div class="product-card__footer">
+                        <span class="product-card__link" data-i18n="product_details">عرض التفاصيل</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </div>
+                </div>
+
+                <div class="product-card reveal" data-delay="200">
+                    <div class="product-card__icon-wrap">
+                        <div class="product-card__icon">
+                            <svg viewBox="0 0 64 64" fill="none"><rect x="8" y="22" width="48" height="26" rx="4" stroke="currentColor" stroke-width="2.5"/><rect x="20" y="16" width="24" height="6" rx="2" stroke="currentColor" stroke-width="2"/><path d="M16 32h10M38 32h10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M26 38h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                        </div>
+                    </div>
+                    <h3 class="product-card__title" data-i18n="product_truck">أنواع الشاحنات</h3>
+                    <p class="product-card__desc" data-i18n="product_truck_desc">علب وأغطية بطاريات مصممة خصيصاً للشاحنات والمركبات الثقيلة</p>
+                    <div class="product-card__footer">
+                        <span class="product-card__link" data-i18n="product_details">عرض التفاصيل</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </div>
+                </div>
+
+                <div class="product-card reveal" data-delay="300">
+                    <div class="product-card__icon-wrap">
+                        <div class="product-card__icon">
+                            <svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="36" r="14" stroke="currentColor" stroke-width="2.5"/><circle cx="32" cy="36" r="6" stroke="currentColor" stroke-width="2"/><path d="M32 18v4M22 22l2 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><rect x="24" y="12" width="16" height="8" rx="3" stroke="currentColor" stroke-width="2"/></svg>
+                        </div>
+                    </div>
+                    <h3 class="product-card__title" data-i18n="product_moto">أنواع الدراجات النارية</h3>
+                    <p class="product-card__desc" data-i18n="product_moto_desc">علب وأغطية بطاريات مخصصة للدراجات النارية بجميع الأحجام</p>
+                    <div class="product-card__footer">
+                        <span class="product-card__link" data-i18n="product_details">عرض التفاصيل</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </div>
+                </div>
+
+                <div class="product-card reveal" data-delay="400">
+                    <div class="product-card__icon-wrap">
+                        <div class="product-card__icon">
+                            <svg viewBox="0 0 64 64" fill="none"><rect x="10" y="16" width="44" height="32" rx="4" stroke="currentColor" stroke-width="2.5"/><path d="M22 28h20v10H22z" stroke="currentColor" stroke-width="2"/><circle cx="18" cy="24" r="3" stroke="currentColor" stroke-width="2"/><path d="M40 20h8M40 24h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                        </div>
+                    </div>
+                    <h3 class="product-card__title" data-i18n="product_dakumar">ماكينات حقن DAKUMAR</h3>
+                    <p class="product-card__desc" data-i18n="product_dakumar_desc">وكلاء معتمدون لماكينات الحقن من مجموعة DAKUMAR العالمية</p>
+                    <div class="product-card__footer">
+                        <span class="product-card__link" data-i18n="product_details">عرض التفاصيل</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </div>
+                </div>
+
+                <div class="product-card reveal" data-delay="500">
+                    <div class="product-card__icon-wrap">
+                        <div class="product-card__icon">
+                            <svg viewBox="0 0 64 64" fill="none"><rect x="14" y="18" width="36" height="28" rx="4" stroke="currentColor" stroke-width="2.5"/><path d="M24 26h16M24 32h12M24 38h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="46" cy="22" r="6" fill="currentColor" opacity="0.15" stroke="currentColor" stroke-width="2"/><path d="M44 22h4M46 20v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                        </div>
+                    </div>
+                    <h3 class="product-card__title" data-i18n="product_accessories">إكسسوارات البطاريات</h3>
+                    <p class="product-card__desc" data-i18n="product_accessories_desc">جميع المكونات البلاستيكية للبطاريات بما في ذلك العيون السحرية</p>
+                    <div class="product-card__footer">
+                        <span class="product-card__link" data-i18n="product_details">عرض التفاصيل</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ABOUT ==================== -->
+    <section class="section about" id="about">
+        <div class="container about__inner">
+            <div class="about__visual reveal">
+                <div class="about__image-wrapper">
+                    <div class="about__pattern"></div>
+                    <div class="about__image-card">
+                        <img src="https://ie-battplast.com/public/home/img/first.png" alt="IE-BattPlast battery box products" class="about__photo">
+                    </div>
+                    <div class="about__badge-card">
+                        <div class="about__badge-icon">
+                            <svg viewBox="0 0 32 32" fill="none"><path d="M16 2l4 8 8 2-6 6 2 8-8-4-8 4 2-8-6-6 8-2 4-8z" fill="var(--clr-accent)" opacity="0.2" stroke="var(--clr-accent)" stroke-width="1.5"/></svg>
+                        </div>
+                        <div>
+                            <strong data-i18n="about_badge_title">وكيل معتمد</strong>
+                            <small>DAKUMAR Group</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about__content">
+                <div class="section__header section__header--left reveal">
+                    <span class="section__tag" data-i18n="about_tag">من نحن</span>
+                    <h2 class="section__title" data-i18n="about_title">عن الشركة</h2>
+                </div>
+                <p class="about__text reveal" data-delay="100" data-i18n="about_text_1">
+                    شركة إيطالية مصرية رائدة متخصصة في تصنيع علب وأغطية بطاريات السيارات والدراجات النارية بجميع الأصناف والموديلات.
+                </p>
+                <div class="about__timeline reveal" data-delay="200">
+                    <div class="timeline-item">
+                        <div class="timeline-item__year">2016</div>
+                        <div class="timeline-item__content">
+                            <h4 data-i18n="about_timeline_1_title">التأسيس</h4>
+                            <p data-i18n="about_timeline_1_desc">تأسيس الشركة ووضع الخطط الاستراتيجية</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-item__year">2019</div>
+                        <div class="timeline-item__content">
+                            <h4 data-i18n="about_timeline_2_title">بداية الإنتاج</h4>
+                            <p data-i18n="about_timeline_2_desc">بدء العمليات الإنتاجية وإقامة شراكات مع جميع مصنعي البطاريات المحليين</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-item__year">2020</div>
+                        <div class="timeline-item__content">
+                            <h4 data-i18n="about_timeline_3_title">وكالة DAKUMAR</h4>
+                            <p data-i18n="about_timeline_3_desc">أصبحنا وكلاء معتمدين لمجموعة DAKUMAR العالمية لماكينات الحقن</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== WHY US ==================== -->
+    <section class="section why-us" id="why-us">
+        <div class="container">
+            <div class="section__header reveal">
+                <span class="section__tag" data-i18n="why_tag">مميزاتنا</span>
+                <h2 class="section__title" data-i18n="why_title">لماذا نحن</h2>
+                <p class="section__desc" data-i18n="why_desc">فريق متخصص بخبرة تتجاوز العشرين عاماً يقدم أعلى جودة وفقاً للمعايير العالمية بسرعة ودقة</p>
+            </div>
+            <div class="why-us__grid">
+                <div class="why-card reveal" data-delay="0">
+                    <div class="why-card__number">01</div>
+                    <div class="why-card__icon">
+                        <svg viewBox="0 0 48 48" fill="none"><path d="M24 4l6 12 12 2-9 9 2 12-11-6-11 6 2-12-9-9 12-2 6-12z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/></svg>
+                    </div>
+                    <h3 class="why-card__title" data-i18n="why_card_1_title">خبرة تتجاوز 21 عاماً</h3>
+                    <p class="why-card__desc" data-i18n="why_card_1_desc">أكثر من 21 عاماً من الخبرة في مجال تصنيع بطاريات السيارات مع فريق محترف ومتخصص</p>
+                </div>
+                <div class="why-card reveal" data-delay="100">
+                    <div class="why-card__number">02</div>
+                    <div class="why-card__icon">
+                        <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2.5"/><path d="M16 24l6 6 10-10" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <h3 class="why-card__title" data-i18n="why_card_2_title">معايير جودة عالمية</h3>
+                    <p class="why-card__desc" data-i18n="why_card_2_desc">نلتزم بأعلى معايير الجودة العالمية في جميع منتجاتنا مع الدقة والسرعة في التنفيذ</p>
+                </div>
+                <div class="why-card reveal" data-delay="200">
+                    <div class="why-card__number">03</div>
+                    <div class="why-card__icon">
+                        <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="14" width="36" height="24" rx="4" stroke="currentColor" stroke-width="2.5"/><path d="M6 22h36" stroke="currentColor" stroke-width="2"/><circle cx="24" cy="30" r="4" stroke="currentColor" stroke-width="2"/><rect x="16" y="8" width="16" height="6" rx="2" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                    <h3 class="why-card__title" data-i18n="why_card_3_title">تصنيع شامل</h3>
+                    <p class="why-card__desc" data-i18n="why_card_3_desc">نصنع جميع المكونات البلاستيكية للبطاريات بما في ذلك العيون السحرية وجميع الملحقات</p>
+                </div>
+                <div class="why-card reveal" data-delay="300">
+                    <div class="why-card__number">04</div>
+                    <div class="why-card__icon">
+                        <svg viewBox="0 0 48 48" fill="none"><path d="M24 4C13 4 4 13 4 24s9 20 20 20 20-9 20-20S35 4 24 4z" stroke="currentColor" stroke-width="2.5"/><path d="M4 24h40M24 4c5 5 8 12 8 20s-3 15-8 20c-5-5-8-12-8-20s3-15 8-20z" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                    <h3 class="why-card__title" data-i18n="why_card_4_title">قوالب عالمية المستوى</h3>
+                    <p class="why-card__desc" data-i18n="why_card_4_desc">نستخدم قوالب حقن عالية الجودة من أفضل الشركات المصنعة العالمية</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== VISION ==================== -->
+    <section class="section vision" id="vision">
+        <div class="container vision__inner">
+            <div class="vision__content reveal">
+                <div class="section__header section__header--left">
+                    <span class="section__tag" data-i18n="vision_tag">نظرتنا المستقبلية</span>
+                    <h2 class="section__title" data-i18n="vision_title">رؤيتنا وأهدافنا</h2>
+                </div>
+                <div class="vision__items">
+                    <div class="vision-item">
+                        <div class="vision-item__icon">
+                            <svg viewBox="0 0 32 32" fill="none"><path d="M16 4l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1 3-6z" stroke="currentColor" stroke-width="2"/></svg>
+                        </div>
+                        <div class="vision-item__content">
+                            <h4 data-i18n="vision_item_1_title">منافسة عالمية</h4>
+                            <p data-i18n="vision_item_1_desc">إنتاج علب وأغطية بطاريات تنافس الشركات العالمية في الجودة والأداء</p>
+                        </div>
+                    </div>
+                    <div class="vision-item">
+                        <div class="vision-item__icon">
+                            <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="2"/><path d="M11 16l4 4 6-8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+                        </div>
+                        <div class="vision-item__content">
+                            <h4 data-i18n="vision_item_2_title">أعلى معايير الجودة</h4>
+                            <p data-i18n="vision_item_2_desc">الحفاظ على أعلى معايير الجودة لجميع العملاء بدون استثناء</p>
+                        </div>
+                    </div>
+                    <div class="vision-item">
+                        <div class="vision-item__icon">
+                            <svg viewBox="0 0 32 32" fill="none"><path d="M6 26V14l10-8 10 8v12H6z" stroke="currentColor" stroke-width="2"/><path d="M12 26v-8h8v8" stroke="currentColor" stroke-width="2"/><path d="M16 2v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                        </div>
+                        <div class="vision-item__content">
+                            <h4 data-i18n="vision_item_3_title">التطوير المستمر</h4>
+                            <p data-i18n="vision_item_3_desc">دعم التطوير المستمر بما يتماشى مع تطور الصناعة وأحدث التقنيات</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="vision__visual reveal" data-delay="200">
+                <div class="vision__globe">
+                    <div class="globe-ring ring-1"></div>
+                    <div class="globe-ring ring-2"></div>
+                    <div class="globe-ring ring-3"></div>
+                    <div class="globe-core">
+                        <svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="1.5" opacity="0.3"/><path d="M32 4c8 8 12 17 12 28S40 52 32 60c-8-8-12-17-12-28S24 12 32 4z" stroke="currentColor" stroke-width="1.5" opacity="0.5"/><path d="M4 32h56" stroke="currentColor" stroke-width="1.5" opacity="0.3"/><path d="M8 20h48M8 44h48" stroke="currentColor" stroke-width="1" opacity="0.2"/></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PARTNERS ==================== -->
+    <section class="section partners">
+        <div class="container">
+            <div class="section__header reveal">
+                <span class="section__tag" data-i18n="partners_tag">شركاؤنا</span>
+                <h2 class="section__title" data-i18n="partners_title">شراكات موثوقة</h2>
+            </div>
+            <div class="partners__marquee reveal">
+                <div class="partners__track">
+                    <div class="partner-item">
+                        <div class="partner-logo">DAKUMAR</div>
+                        <span>Group</span>
+                    </div>
+                    <div class="partner-item">
+                        <div class="partner-logo" data-i18n="partner_local">مصنعو البطاريات المحليون</div>
+                    </div>
+                    <div class="partner-item">
+                        <div class="partner-logo" data-i18n="partner_mold">شركات القوالب العالمية</div>
+                    </div>
+                    <div class="partner-item">
+                        <div class="partner-logo">DAKUMAR</div>
+                        <span>Group</span>
+                    </div>
+                    <div class="partner-item">
+                        <div class="partner-logo" data-i18n="partner_local">مصنعو البطاريات المحليون</div>
+                    </div>
+                    <div class="partner-item">
+                        <div class="partner-logo" data-i18n="partner_mold">شركات القوالب العالمية</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section class="section contact" id="contact">
+        <div class="container contact__inner">
+            <div class="contact__info reveal">
+                <div class="section__header section__header--left">
+                    <span class="section__tag" data-i18n="contact_tag">تواصل معنا</span>
+                    <h2 class="section__title" data-i18n="contact_title">ابقَ على تواصل</h2>
+                    <p class="section__desc" data-i18n="contact_desc">نحن هنا لمساعدتك. تواصل معنا للاستفسارات والطلبات</p>
+                </div>
+                <div class="contact__details">
+                    <div class="contact-detail">
+                        <div class="contact-detail__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <div>
+                            <strong data-i18n="contact_address_label">العنوان</strong>
+                            <p data-i18n="contact_address">الصالحية الجديدة - المنطقة الصناعية الثانية - القطعة 91&93 - محافظة الشرقية - مصر</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="contact-detail__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                        </div>
+                        <div>
+                            <strong data-i18n="contact_phone_label">الهاتف</strong>
+                            <p dir="ltr">0020553202320</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="contact-detail__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+                        </div>
+                        <div>
+                            <strong data-i18n="contact_sales_label">المبيعات</strong>
+                            <p dir="ltr">00201018591759<br>00201208421314</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="contact-detail__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+                        </div>
+                        <div>
+                            <strong data-i18n="contact_email_label">البريد الإلكتروني</strong>
+                            <p>Sales@ie-battplast.com<br>info@ie-battplast.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact__socials">
+                    <a href="https://www.facebook.com/Italian-Egyptian-Co-for-Plastic-Authorized-agent-of-Dakumar-Group-111590727165401/" class="social-link" aria-label="Facebook" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                    </a>
+                    <a href="https://twitter.com/IePlast" class="social-link" aria-label="Twitter" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+                    </a>
+                    <a href="https://instagram.com/iebattplast" class="social-link" aria-label="Instagram" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCOFHFkkSvw1mILH9_4iFVWA/?guided_help_flow=5" class="social-link" aria-label="YouTube" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.43z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#fff"/></svg>
+                    </a>
+                    <a href="https://linkedin.com/company/iebattplast" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="contact__form-wrap reveal" data-delay="200">
+                <form class="contact-form" id="contactForm" onsubmit="return false;">
+                    <h3 class="contact-form__title" data-i18n="form_title">أرسل رسالة</h3>
+                    <div class="form-group">
+                        <label for="formName" data-i18n="form_name">الاسم الكامل</label>
+                        <input type="text" id="formName" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="formEmail" data-i18n="form_email">البريد الإلكتروني</label>
+                            <input type="email" id="formEmail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="formPhone" data-i18n="form_phone">رقم الهاتف</label>
+                            <input type="tel" id="formPhone" dir="ltr">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="formSubject" data-i18n="form_subject">الموضوع</label>
+                        <input type="text" id="formSubject">
+                    </div>
+                    <div class="form-group">
+                        <label for="formMessage" data-i18n="form_message">الرسالة</label>
+                        <textarea id="formMessage" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full">
+                        <span data-i18n="form_submit">إرسال الرسالة</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__brand">
+                <div class="footer__logo">
+                    <img src="https://ie-battplast.com/public/home/logo.png" alt="IE-BattPlast" class="footer__logo-img">
+                </div>
+                <p class="footer__desc" data-i18n="footer_desc">شركة إيطالية مصرية رائدة في تصنيع علب وأغطية بطاريات السيارات والدراجات النارية.</p>
+            </div>
+            <div class="footer__links">
+                <h4 data-i18n="footer_links">روابط سريعة</h4>
+                <ul>
+                    <li><a href="#home" data-i18n="nav_home">الرئيسية</a></li>
+                    <li><a href="#products" data-i18n="nav_products">المنتجات</a></li>
+                    <li><a href="#about" data-i18n="nav_about">عن الشركة</a></li>
+                    <li><a href="#contact" data-i18n="nav_contact">تواصل معنا</a></li>
+                </ul>
+            </div>
+            <div class="footer__links">
+                <h4 data-i18n="footer_products">المنتجات</h4>
+                <ul>
+                    <li><a href="#products" data-i18n="product_jis">أنواع JIS</a></li>
+                    <li><a href="#products" data-i18n="product_din">أنواع DIN</a></li>
+                    <li><a href="#products" data-i18n="product_truck">أنواع الشاحنات</a></li>
+                    <li><a href="#products" data-i18n="product_dakumar">ماكينات حقن DAKUMAR</a></li>
+                </ul>
+            </div>
+            <div class="footer__contact">
+                <h4 data-i18n="contact_tag">تواصل معنا</h4>
+                <p data-i18n="contact_address">الصالحية الجديدة - المنطقة الصناعية الثانية - القطعة 91&93 - محافظة الشرقية - مصر</p>
+                <p dir="ltr" class="footer__phone">0020553202320</p>
+                <p>info@ie-battplast.com</p>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container footer__bottom-inner">
+                <p>&copy; <span id="footerYear">2024</span> IE-BattPlast. <span data-i18n="footer_rights">جميع الحقوق محفوظة.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
